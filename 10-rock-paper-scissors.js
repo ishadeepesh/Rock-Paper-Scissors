@@ -3,22 +3,9 @@ const score = {
     losses: 0,
     ties: 0
   };
-  //let score = JSON.parse(localStorage.getItem('score'));
+  
 
-  updateScoreElement();                 //-------
-  /*                                            -
-  if(score === null)   or(!score){              -
-    score = {                                   -
-      wins: 0,                                  -
-      losses: 0,                                -
-      ties: 0                                   -
-    };                                          -
-  }                                             -
-  */                                          //-
-  /*                                            -
-  document.querySelector('.js-score')      <-----
-    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
-  */
+  updateScoreElement();                 
 
   function playGame(playerMove) {
     computerMove = pickComputerMove();
@@ -76,7 +63,7 @@ const score = {
     }
 
     
-    //localStorage.setItem('score', JSON.stringify(score));
+    
 
     updateScoreElement();
 
